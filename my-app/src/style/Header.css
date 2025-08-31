@@ -1,0 +1,41 @@
+/* Header.css */
+
+.header {
+    width: 100%;
+    background-color: #000; /* ✅ Black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+  }
+  
+  .header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /* Optional: Make nav links white */
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: color 0.2s;
+  }
+  
+  .nav-list li a:hover {
+    color: #90caf9;
+    text-decoration: underline; /* Optional underline on hover */
+  }
+  
